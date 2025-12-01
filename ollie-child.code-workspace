@@ -1,0 +1,59 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		// Prettier behavior
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"[json]": {
+			"editor.defaultFormatter": "esbenp.prettier-vscode"
+		},
+		"[jsonc]": {
+			"editor.defaultFormatter": "esbenp.prettier-vscode"
+		},
+		"[javascript]": {
+			"editor.defaultFormatter": "esbenp.prettier-vscode"
+		},
+		"[css]": {
+			"editor.defaultFormatter": "esbenp.prettier-vscode"
+		},
+
+		// DO NOT FORMAT PHP with Prettier
+		"[php]": {
+			"editor.formatOnSave": false
+		},
+
+		// Enable format on save for supported languages
+		"editor.formatOnSave": true,
+
+		// Make VS Code recognize WordPress file structure
+		"files.exclude": {
+			"**/.DS_Store": true,
+			"**/.git": true,
+			"**/node_modules": true
+		},
+
+		// Improves search in WordPress themes
+		"search.exclude": {
+			"**/node_modules": true,
+			"**/vendor": true
+		}
+	},
+	"extensions": {
+		"recommendations": [
+			"anthropic.claude-code",
+			"esbenp.prettier-vscode",
+			"dbaeumer.vscode-eslint",
+			"bmewburn.vscode-intelephense-client",
+			"liximomo.sftp",
+			"eamodio.gitlens",
+			"humao.rest-client",
+			"editorconfig.editorconfig",
+			"streetsidesoftware.code-spell-checker",
+			"xabikos.javascriptreact-snippets"
+		],
+		"unwantedRecommendations": ["github.copilot", "github.copilot-chat"]
+	}
+}
