@@ -1,14 +1,53 @@
-# macOS
+# ---------------------------------------------------------
+# OS & Editor Files
+# ---------------------------------------------------------
 .DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.tmp
 
-# Node
+# VS Code
+.vscode/
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+
+# ---------------------------------------------------------
+# Node / Build Tools (if you add asset pipelines later)
+# ---------------------------------------------------------
 node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+pnpm-lock.yaml
+dist/
+build/
 
-# Composer
+# ---------------------------------------------------------
+# Composer (PHP dependency manager - optional)
+# ---------------------------------------------------------
 vendor/
+composer.lock
 
+# ---------------------------------------------------------
 # Logs
+# ---------------------------------------------------------
 *.log
 
-# Local config
+# ---------------------------------------------------------
+# Environment & System Files
+# ---------------------------------------------------------
+.env
+.env.*
+*.local
 local-config.php
+
+# ---------------------------------------------------------
+# WordPress Theme Export Files
+# (Avoid committing zip exports or generated artifacts)
+# ---------------------------------------------------------
+*.zip
+theme-export/
